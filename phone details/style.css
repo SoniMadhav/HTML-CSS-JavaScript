@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilory";
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+nav {
+  width: 80%;
+  position: sticky;
+  margin: 20px auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex-basis: 20%;
+}
+
+.logo img {
+  width: 150px;
+}
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-link ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.information {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+#circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.feature img {
+  width: 70px;
+}
+.feature {
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+.feature div {
+  margin-left: 30px;
+}
+.feature div p{
+  margin-top: 8px;
+}
+.one {
+  top: 450px;
+  right: 50px;
+}
+
+.two {
+  top: 150px;
+  left: 350px;
+  transform: rotate(-90deg);
+}
+
+.three {
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+
+}
+.four {
+  bottom: 150px;
+  right: 350px;
+  transform: rotate(-270deg);
+
+}
+.mobile{
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.control{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+
+}
+.control h3{
+  margin: 20px 50px 20px -15px;
+  color: #050505;
+    
+}
+#upbtn{
+  width: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  
+}
+#upbtn:hover{
+  box-shadow: 0px -2px 20px 8px rgba(0,9,9);
+
+}
+
+#downbtn{
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  border: 1px solid black;
+
+}
+#downbtn:hover{
+  box-shadow: 0px -2px 20px 8px rgba(0,9,9);
+  
+}
+
+.overlay{
+  width: 0;
+  height: 0;
+  border-top: 500px solid #fff;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
+  position: absolute;
+  left: 0;top: 0;
+
+}
+
+
+.md  {
+  width: 230px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-left: 50px;
+  margin-top:50px;
+  background: linear-gradient(270deg, #69f0cd, #1d3ffd, #fd1d43, #eee6e7);
+  background-size: 800% 800%;
+  animation: AnimationName 30s ease infinite;
+  color: black;
+  font-weight: 700;
+  border-radius: 0px 40px;
+  font-family: cursive;
+  border: 0;
+  outline: 0;
+}
+
+ .md:hover{
+  box-shadow: 5px 12px 50px rgb(59, 50, 50) ;
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
