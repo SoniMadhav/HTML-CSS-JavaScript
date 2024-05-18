@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing :border-box;
+    font-family: 'Gilory';
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+        font-family: sans-serif;
+}
+.gallery{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    margin: 5% auto 0;
+    padding: 2%;
+    border:1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+.img-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.8s;
+}
+
+.img-box img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+
+}
+.img-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+
+}
+.gallery:hover .active{
+    flex-basis: 0;
+}
+.img-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
+
+.md  {
+    width: 230px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 60px;
+    margin-top:80px;
+    margin-left: 40%;
+    background: linear-gradient(270deg, #69f0cd, #1d3ffd, #fd1d43, #eee6e7);
+    background-size: 800% 800%;
+    animation: AnimationName 30s ease infinite;
+    color: black;
+    font-weight: 700;
+    border-radius: 0px 40px;
+    font-family: cursive;
+    border: 0;
+    outline: 0;
+}
+
+.md:hover{
+    box-shadow: 5px 12px 50px rgb(59, 50, 50) ;
+    
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
